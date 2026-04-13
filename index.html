@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,12 +26,17 @@
         <span class="nav-toggle-bar"></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#competitions">Competitions</a></li>
-        <li><a href="#collaborators">Collaborators</a></li>
+        <li><a href="#about" data-i18n="navAbout"></a></li>
+        <li><a href="#news" data-i18n="navNews"></a></li>
+        <li><a href="#publications" data-i18n="navPub"></a></li>
+        <li><a href="#competitions" data-i18n="navComp"></a></li>
+        <li><a href="#collaborators" data-i18n="navCollab"></a></li>
       </ul>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+        <span class="lang-option" data-lang="en">EN</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-option" data-lang="zh">中文</span>
+      </button>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
         <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -51,7 +56,7 @@
     <!-- Research Interests -->
     <section class="section" id="about">
       <div class="container">
-        <h2 class="section-title">Research Interests</h2>
+        <h2 class="section-title" data-i18n="about"></h2>
         <div id="research-interests"></div>
       </div>
     </section>
@@ -59,7 +64,7 @@
     <!-- News -->
     <section class="section section-alt" id="news">
       <div class="container">
-        <h2 class="section-title">News</h2>
+        <h2 class="section-title" data-i18n="news"></h2>
         <div class="news-list" id="news-list"></div>
       </div>
     </section>
@@ -67,7 +72,7 @@
     <!-- Publications -->
     <section class="section" id="publications">
       <div class="container">
-        <h2 class="section-title">Selected Publications</h2>
+        <h2 class="section-title" data-i18n="publications"></h2>
         <div class="pub-list" id="pub-list"></div>
       </div>
     </section>
@@ -75,7 +80,7 @@
     <!-- Competitions -->
     <section class="section section-alt" id="competitions">
       <div class="container">
-        <h2 class="section-title">Competitions</h2>
+        <h2 class="section-title" data-i18n="competitions"></h2>
         <div class="comp-list" id="comp-list"></div>
       </div>
     </section>
@@ -83,7 +88,7 @@
     <!-- Collaborators -->
     <section class="section" id="collaborators">
       <div class="container">
-        <h2 class="section-title">Collaboration</h2>
+        <h2 class="section-title" data-i18n="collaboration"></h2>
         <div id="collab-content"></div>
       </div>
     </section>
@@ -92,8 +97,8 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>Updated <span id="footer-date"></span></p>
-      <p>Built with <a href="https://claude.ai/code" target="_blank">Claude Code</a></p>
+      <p><span data-i18n="updated"></span> <span id="footer-date"></span></p>
+      <p><span data-i18n="builtWith"></span> <a href="https://claude.ai/code" target="_blank">Claude Code</a></p>
     </div>
   </footer>
 

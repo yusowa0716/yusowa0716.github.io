@@ -1,6 +1,8 @@
 {
   "name": "Yusong Wang",
+  "nameZh": "王宇松",
   "title": "Ph.D. Candidate",
+  "titleZh": "博士研究生",
   "photoUrl": "images/yusong.jpg",
   "email": "yusowa0716 [at] gmail [dot] com",
   "cvUrl": "data/CV_Yusong_Wang.pdf",
@@ -9,10 +11,14 @@
     { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=sCBrMcIAAAAJ", "icon": "scholar" }
   ],
   "bio": "I received my B.S. in the <a href=\"https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young\" target=\"_blank\">Special Class for the Gifted Young (SCGY)</a> program at <a href=\"http://en.xjtu.edu.cn/\" target=\"_blank\">Xi'an Jiaotong University</a>, majoring in Automation. Currently, I am a third-year Ph.D. candidate jointly trained at <a href=\"https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/\" target=\"_blank\">Microsoft Research Asia</a> and <a href=\"http://www.aiar.xjtu.edu.cn/\" target=\"_blank\">Institute of Artificial Intelligence and Robotics</a> in Xi'an Jiaotong University, under the supervision of Dr. <a href=\"https://www.binshao.info/\" target=\"_blank\">Bin Shao</a> and Academician of Chinese Academy of Engineering, Dr. <a href=\"https://ieeexplore.ieee.org/author/37271536700\" target=\"_blank\">Nanning Zheng</a>.",
+  "bioZh": "我本科毕业于<a href=\"http://en.xjtu.edu.cn/\" target=\"_blank\">西安交通大学</a><a href=\"https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young\" target=\"_blank\">少年班</a>，主修自动化专业。目前我是<a href=\"https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/\" target=\"_blank\">微软亚洲研究院</a>与西安交通大学<a href=\"http://www.aiar.xjtu.edu.cn/\" target=\"_blank\">人工智能与机器人研究所</a>联合培养的博士研究生，导师为<a href=\"https://www.binshao.info/\" target=\"_blank\">邵斌</a>博士和中国工程院院士<a href=\"https://ieeexplore.ieee.org/author/37271536700\" target=\"_blank\">郑南宁</a>教授。",
   "bioSecondary": "I served as a research intern at <a href=\"https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/\" target=\"_blank\">Microsoft Research AI4Science</a> supervised by Dr. <a href=\"https://www.binshao.info/\" target=\"_blank\">Bin Shao</a> from July 2020.",
+  "bioSecondaryZh": "自2020年7月起，我在<a href=\"https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/\" target=\"_blank\">微软研究院 AI4Science</a> 担任研究实习生，导师为<a href=\"https://www.binshao.info/\" target=\"_blank\">邵斌</a>博士。",
   "researchInterests": {
     "summary": "I'm primarily interested in AI4Science, particularly in machine learning force fields. Recently, I've developed a strong interest in Generative AI as well. I'm dedicated to using generative models to explore new solutions in science, including potential energy surface sampling, protein-ligand docking, etc.",
-    "highlightNote": "Representative papers are <span class=\"highlight\">highlighted</span>."
+    "summaryZh": "我的主要研究兴趣为 AI4Science，尤其是机器学习力场。近期，我对生成式人工智能也产生了浓厚兴趣，致力于利用生成模型探索科学领域的新方案，包括势能面采样、蛋白质-配体对接等。",
+    "highlightNote": "Representative papers are <span class=\"highlight\">highlighted</span>.",
+    "highlightNoteZh": "代表性论文已<span class=\"highlight\">高亮标注</span>。"
   },
   "collaborators": [
     { "name": "Dr. Shaoning Li", "url": "https://www.shaoningli.com/" },

@@ -18,6 +18,64 @@ function linkIcon(label) {
 }
 
 /* ============================================================
+   i18n — UI strings
+   ============================================================ */
+const I18N = {
+  en: {
+    navAbout: 'About',
+    navNews: 'News',
+    navPub: 'Publications',
+    navComp: 'Competitions',
+    navCollab: 'Collaborators',
+    about: 'Research Interests',
+    news: 'News',
+    publications: 'Selected Publications',
+    competitions: 'Competitions',
+    collaboration: 'Collaboration',
+    collabIntro: 'I have close collaboration with the following researchers:',
+    updated: 'Updated',
+    builtWith: 'Built with',
+  },
+  zh: {
+    navAbout: '关于',
+    navNews: '动态',
+    navPub: '论文',
+    navComp: '竞赛',
+    navCollab: '合作',
+    about: '研究方向',
+    news: '新闻动态',
+    publications: '代表论文',
+    competitions: '竞赛获奖',
+    collaboration: '学术合作',
+    collabIntro: '我与以下研究者有密切合作：',
+    updated: '更新于',
+    builtWith: '构建工具',
+  }
+};
+
+function getLang() {
+  return document.documentElement.dataset.lang || 'en';
+}
+
+function t(key) {
+  return (I18N[getLang()] || I18N.en)[key] || (I18N.en)[key] || key;
+}
+
+/** Pick field with Zh suffix when in Chinese, fallback to base field */
+function locField(obj, field) {
+  const lang = getLang();
+  if (lang === 'zh' && obj[field + 'Zh'] != null) return obj[field + 'Zh'];
+  return obj[field];
+}
+
+/** Update all elements with data-i18n attribute */
+function applyI18nLabels() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    el.textContent = t(el.dataset.i18n);
+  });
+}
+
+/* ============================================================
    Data Loading
    ============================================================ */
 async function loadJSON(url) {
@@ -56,10 +114,10 @@ function el(tag, cls, html) {
 function renderHero(p) {
   const content = document.getElementById('hero-content');
   content.innerHTML = `
-    <h1 class="hero-name">${p.name}</h1>
-    <p class="hero-title">${p.title}</p>
-    <p class="hero-bio">${p.bio}</p>
-    <p class="hero-bio">${p.bioSecondary}</p>
+    <h1 class="hero-name">${locField(p, 'name')}</h1>
+    <p class="hero-title">${locField(p, 'title')}</p>
+    <p class="hero-bio">${locField(p, 'bio')}</p>
+    <p class="hero-bio">${locField(p, 'bioSecondary')}</p>
     <p class="hero-email">Email: ${p.email}</p>
     <div class="hero-links">
       <a href="${p.cvUrl}" class="hero-link" target="_blank">${ICONS.download} CV</a>
@@ -77,9 +135,10 @@ function renderHero(p) {
    Render: Research Interests
    ============================================================ */
 function renderResearchInterests(p) {
+  const ri = p.researchInterests;
   const container = document.getElementById('research-interests');
   container.innerHTML = `
-    <p class="research-text">${p.researchInterests.summary} ${p.researchInterests.highlightNote}</p>
+    <p class="research-text">${locField(ri, 'summary')} ${locField(ri, 'highlightNote')}</p>
   `;
 }
 
@@ -88,14 +147,14 @@ function renderResearchInterests(p) {
    ============================================================ */
 function renderNews(items) {
   const list = document.getElementById('news-list');
+  list.innerHTML = '';
   items.forEach((item, i) => {
-    const div = el('div', 'news-item reveal');
-    div.style.transitionDelay = `${i * 80}ms`;
+    const div = el('div', 'news-item reveal revealed');
     div.innerHTML = `
       <span class="news-date">${item.date}</span>
       <span class="news-content">
         ${item.isNew ? '<span class="badge-new">New</span>' : ''}
-        ${item.content}
+        ${locField(item, 'content')}
       </span>
     `;
     list.appendChild(div);
@@ -107,9 +166,9 @@ function renderNews(items) {
    ============================================================ */
 function renderPublications(pubs) {
   const list = document.getElementById('pub-list');
+  list.innerHTML = '';
   pubs.forEach((pub, i) => {
-    const card = el('div', `pub-card reveal${pub.highlight ? ' pub-card--highlighted' : ''}`);
-    card.style.transitionDelay = `${i * 80}ms`;
+    const card = el('div', `pub-card reveal revealed${pub.highlight ? ' pub-card--highlighted' : ''}`);
 
     // Image
     let imgHTML = `<img src="${pub.image}" alt="${pub.id}">`;
@@ -121,12 +180,14 @@ function renderPublications(pubs) {
     }
 
     // Award
-    const awardHTML = pub.award
-      ? `<div class="pub-award">${pub.award}</div>`
+    const award = locField(pub, 'award');
+    const awardHTML = award
+      ? `<div class="pub-award">${award}</div>`
       : '';
 
     // Tags
-    const tagsHTML = pub.tags.map(t => `<span class="pub-tag">${t}</span>`).join('');
+    const tags = locField(pub, 'tags');
+    const tagsHTML = tags.map(t => `<span class="pub-tag">${t}</span>`).join('');
 
     // Links
     const linksHTML = pub.links.map(l =>
@@ -153,14 +214,15 @@ function renderPublications(pubs) {
    ============================================================ */
 function renderCompetitions(comps) {
   const list = document.getElementById('comp-list');
+  list.innerHTML = '';
   comps.forEach((c, i) => {
-    const item = el('div', 'comp-item reveal');
-    item.style.transitionDelay = `${i * 80}ms`;
-    const isGold = /1st/i.test(c.result);
+    const item = el('div', 'comp-item reveal revealed');
+    const result = locField(c, 'result');
+    const isGold = /1st|一等/i.test(result);
     item.innerHTML = `
       <span class="comp-date">${c.date}</span>
-      <span class="comp-name"><a href="${c.url}" target="_blank">${c.name}</a></span>
-      <span class="comp-badge${isGold ? ' comp-badge--gold' : ''}">${c.result}</span>
+      <span class="comp-name"><a href="${c.url}" target="_blank">${locField(c, 'name')}</a></span>
+      <span class="comp-badge${isGold ? ' comp-badge--gold' : ''}">${result}</span>
     `;
     list.appendChild(item);
   });
@@ -175,7 +237,7 @@ function renderCollaborators(p) {
     `<a href="${c.url}" class="collab-chip" target="_blank">${c.name}</a>`
   ).join('');
   container.innerHTML = `
-    <p class="collab-text">I have close collaboration with the following researchers:</p>
+    <p class="collab-text">${t('collabIntro')}</p>
     <div class="collab-chips">${chips}</div>
   `;
 }
@@ -187,6 +249,20 @@ function renderFooter() {
   const now = new Date();
   const months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
   document.getElementById('footer-date').textContent = `${months[now.getMonth()]} ${now.getFullYear()}`;
+}
+
+/* ============================================================
+   Render All (for language switch)
+   ============================================================ */
+function renderAll(data) {
+  applyI18nLabels();
+  renderHero(data.profile);
+  renderResearchInterests(data.profile);
+  renderNews(data.news);
+  renderPublications(data.publications);
+  renderCompetitions(data.competitions);
+  renderCollaborators(data.profile);
+  renderFooter();
 }
 
 /* ============================================================
@@ -213,6 +289,37 @@ function initThemeToggle() {
     if (!localStorage.getItem('theme')) {
       html.dataset.theme = e.matches ? 'dark' : 'light';
     }
+  });
+}
+
+/* ============================================================
+   Language Toggle
+   ============================================================ */
+function initLangToggle(data) {
+  const btn = document.getElementById('lang-toggle');
+  const html = document.documentElement;
+  const options = btn.querySelectorAll('.lang-option');
+
+  // Restore saved language
+  const saved = localStorage.getItem('lang');
+  if (saved) html.dataset.lang = saved;
+
+  // Highlight the active option
+  function updateActive() {
+    const lang = getLang();
+    options.forEach(opt => {
+      opt.classList.toggle('active', opt.dataset.lang === lang);
+    });
+    html.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+  }
+  updateActive();
+
+  btn.addEventListener('click', () => {
+    const next = getLang() === 'en' ? 'zh' : 'en';
+    html.dataset.lang = next;
+    localStorage.setItem('lang', next);
+    updateActive();
+    renderAll(data);
   });
 }
 
@@ -312,14 +419,8 @@ async function init() {
 
   try {
     const data = await loadAllData();
-    renderHero(data.profile);
-    renderResearchInterests(data.profile);
-    renderNews(data.news);
-    renderPublications(data.publications);
-    renderCompetitions(data.competitions);
-    renderCollaborators(data.profile);
-    renderFooter();
-
+    renderAll(data);
+    initLangToggle(data);
     initScrollReveal();
     initActiveNavTracking();
   } catch (err) {

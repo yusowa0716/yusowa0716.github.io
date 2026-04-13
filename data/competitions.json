@@ -2,25 +2,33 @@
   {
     "date": "Aug. 2023",
     "name": "First Global AI Drug Development Competition",
+    "nameZh": "首届全球人工智能药物研发大赛",
     "url": "https://aistudio.baidu.com/competition/detail/1012/0/leaderboard",
-    "result": "1st Prize"
+    "result": "1st Prize",
+    "resultZh": "一等奖"
   },
   {
     "date": "Nov. 2022",
     "name": "OGB-LSC Graph Regression Track @ NeurIPS 2022",
+    "nameZh": "OGB-LSC 图回归赛道 @ NeurIPS 2022",
     "url": "https://ogb.stanford.edu/neurips2022/results/",
-    "result": "2nd Place"
+    "result": "2nd Place",
+    "resultZh": "第二名"
   },
   {
     "date": "Nov. 2022",
     "name": "Open Catalyst Project @ NeurIPS 2022",
+    "nameZh": "Open Catalyst 挑战赛 @ NeurIPS 2022",
     "url": "https://opencatalystproject.org/challenge.html",
-    "result": "3rd Place"
+    "result": "3rd Place",
+    "resultZh": "第三名"
   },
   {
     "date": "Sep. 2019",
     "name": "The 1st IKCEST \"the Belt and Road\" International Big Data Competition",
+    "nameZh": "第一届 IKCEST「一带一路」国际大数据竞赛",
     "url": "https://ikcest.org/bigdata2021/zxdt/content/210450484964329046.html",
-    "result": "International Excellence Prize"
+    "result": "International Excellence Prize",
+    "resultZh": "国际优秀奖"
   }
 ]
