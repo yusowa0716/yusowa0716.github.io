@@ -300,10 +300,6 @@ function initLangToggle(data) {
   const html = document.documentElement;
   const options = btn.querySelectorAll('.lang-option');
 
-  // Restore saved language
-  const saved = localStorage.getItem('lang');
-  if (saved) html.dataset.lang = saved;
-
   // Highlight the active option
   function updateActive() {
     const lang = getLang();
@@ -419,6 +415,11 @@ async function init() {
 
   try {
     const data = await loadAllData();
+
+    // Restore saved language before first render
+    const savedLang = localStorage.getItem('lang');
+    if (savedLang) document.documentElement.dataset.lang = savedLang;
+
     renderAll(data);
     initLangToggle(data);
     initScrollReveal();
