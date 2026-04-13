@@ -1,511 +1,102 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Yusong Wang</title>
-
-    <meta name="author" content="Yusong Wang">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <!-- <link rel="icon" type="image/png" href="images/icon.png"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yusong Wang</title>
+  <meta name="author" content="Yusong Wang">
+  <meta name="description" content="Yusong Wang - Ph.D. Candidate in AI4Science, Microsoft Research Asia & Xi'an Jiaotong University">
+  <meta property="og:title" content="Yusong Wang - Academic Homepage">
+  <meta property="og:description" content="Ph.D. Candidate in AI4Science">
+  <meta property="og:image" content="images/yusong.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <table
-        style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-            <tr style="padding:0px">
-                <td style="padding:0px">
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:0px">
-                        <tbody>
-                            <tr style="padding:0px">
-                                <td style="padding:2.7%;width:68%;vertical-align:middle;text-align:justify;">
-                                    <p style="text-align:center">
-                                        <name>Yusong Wang</name>
-                                    </p>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Back to top">YW</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#competitions">Competitions</a></li>
+        <li><a href="#collaborators">Collaborators</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </nav>
 
-                                    <p>I received my B.S. in the <a href="https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young">Special Class for the Gifted Young (SCGY)</a> program at <a href="http://en.xjtu.edu.cn/">Xi'an Jiaotong University</a>, majoring in Automation. Currently, I am a third-year Ph.D. candidate jointly trained at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a> and <a href="http://www.aiar.xjtu.edu.cn/">Institute of Artificial Intelligence and Robotics</a> in Xi'an Jiaotong University, under the supervision of Dr. <a href="https://www.binshao.info/">Bin Shao</a> and Academician of Chinese Academy of Engineering, Dr. <a href="https://ieeexplore.ieee.org/author/37271536700">Nanning Zheng</a>.
-                                    </p>
-                                    <p> 
-                                    I served as a research intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/">Microsoft Research AI4Science</a> supervised by Dr. <a href="https://www.binshao.info/">Bin Shao</a> from July 2020.
-                                    </p>
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content" id="hero-content"></div>
+        <div class="hero-photo" id="hero-photo"></div>
+      </div>
+    </section>
 
-                                    <p>Email: yusowa0716 [at] gmail [dot] com</p>
+    <!-- Research Interests -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">Research Interests</h2>
+        <div id="research-interests"></div>
+      </div>
+    </section>
 
-                                    <p style="text-align:left">
-                                        <a href="data/CV_Yusong_Wang.pdf">CV</a> &nbsp/&nbsp
-                                        <a href="https://github.com/yusowa0716" target="_blank">
-                                        Github</a> &nbsp&nbsp/&nbsp&nbsp
-                                        <a href="https://scholar.google.com/citations?user=sCBrMcIAAAAJ" target="_blank">
-                                        Google Scholar</a>
-                                    </p>
-                                </td>
-                                <td style="padding:2.5%">
-                                    <a href="images/yusong.jpg"><img style="width:90%;max-width:100%;object-fit: cover; height:auto; max-height:100%; border-radius: 0%;" alt="profile photo" src="images/yusong.jpg" class="hoverZoomLink"></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <!-- News -->
+    <section class="section section-alt" id="news">
+      <div class="container">
+        <h2 class="section-title">News</h2>
+        <div class="news-list" id="news-list"></div>
+      </div>
+    </section>
 
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;text-align:justify;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <heading>Research Interests</heading>
-                                    <p>
-                                        I'm primarily interested in AI4Science, particularly in machine learning force fields. Recently, I've developed a strong interest in Generative AI as well. I'm dedicated to using generative models to explore new solutions in science, including potential energy surface sampling, protein-ligand docking, etc. Representative papers are <span class="highlight">highlighted</span>.
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <!-- Publications -->
+    <section class="section" id="publications">
+      <div class="container">
+        <h2 class="section-title">Selected Publications</h2>
+        <div class="pub-list" id="pub-list"></div>
+      </div>
+    </section>
 
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <heading>News</heading>
-                                    <p>
-                                        <strong>[Sep. 2024]</strong>&nbsp&nbsp
-                                        <font color="red"><strong>New!!</strong></font>&nbsp
-                                        One paper was accepted at <a
-                                            href="https://neurips.cc/" target="_blank">NeurIPS 2024</a>.
-                                    </p>       
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <heading>Selected Publications</heading>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <!-- Competitions -->
+    <section class="section section-alt" id="competitions">
+      <div class="container">
+        <h2 class="section-title">Competitions</h2>
+        <div class="comp-list" id="comp-list"></div>
+      </div>
+    </section>
 
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
+    <!-- Collaborators -->
+    <section class="section" id="collaborators">
+      <div class="container">
+        <h2 class="section-title">Collaboration</h2>
+        <div id="collab-content"></div>
+      </div>
+    </section>
+  </main>
 
-                            <tr onmouseout="np3m_stop()" onmouseover="np3m_start()" bgcolor="#ffffd0">
-                                <td style="padding:45px;width:25%;vertical-align:left">
-                                    <div class="one">
-                                        <div class="two" id='np3m_image'>
-                                            <img src='images/np3m.png' height="140" width="200">
-                                        </div>
-                                            <img src='images/np3m.png' height="140" width="200">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function np3m_start() {
-                                            document.getElementById('np3m_image').style.opacity = "1";
-                                        }
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Updated <span id="footer-date"></span></p>
+      <p>Built with <a href="https://claude.ai/code" target="_blank">Claude Code</a></p>
+    </div>
+  </footer>
 
-                                        function np3m_stop() {
-                                            document.getElementById('np3m_image').style.opacity = "0";
-                                        }
-                                        np3m_stop()
-                                    </script>
-                                </td>
-
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle>Neural P<sup>3</sup>M: A Long-Range Interaction Modeling Enhancer for Geometric GNNs
-                                    </papertitle>
-                                    <br>
-                                    <strong>Yusong Wang*</strong>,&nbsp
-                                    Chaoran Cheng*,&nbsp
-                                    Shaoning Li*,&nbsp
-                                    Yuxuan Ren,&nbsp
-                                    Bin Shao,&nbsp
-                                    Ge Liu,&nbsp
-                                    Pheng-Ann Heng,&nbsp
-                                    Nanning Zheng,&nbsp
-                                    <br>
-                                    <em>38th Conference on Neural Information Processing Systems</em>&nbsp<strong>(NeurIPS 2024)</strong>&nbsp&nbsp
-                                    <br>
-                                    <font color="gray">Molecule representation learning; Long-range interaction modeling; Geometric GNNs</font>
-                                    <br>
-                                    <a href="https://arxiv.org/pdf/2409.17622v1" target="_blank">[Paper]</a>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="alphaflow_stop()" onmouseover="alphaflow_start()">
-                                <td style="padding:45px;width:25%;vertical-align:left">
-                                    <div class="one">
-                                        <div class="two" id='openflow_image'>
-                                            <img src='images/openflow_0.png' height="140" width="200">
-                                        </div>
-                                            <img src='images/openflow_1.png' height="140" width="200">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function alphaflow_start() {
-                                            document.getElementById('openflow_image').style.opacity = "1";
-                                        }
-
-                                        function alphaflow_stop() {
-                                            document.getElementById('openflow_image').style.opacity = "0";
-                                        }
-                                        alphaflow_stop()
-                                    </script>
-                                </td>
-
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle>Improving AlphaFlow for Efficient Protein Ensembles Generation
-                                    </papertitle>
-                                    <br>
-                                    Shaoning Li*,&nbsp
-                                    Mingyu Li*,&nbsp
-                                    <strong>Yusong Wang</strong>,&nbsp
-                                    Xinheng He,&nbsp
-                                    Nanning Zheng,&nbsp
-                                    Jian Zhang,&nbsp
-                                    Pheng-Ann Heng,&nbsp
-                                    <br>
-                                    <em>41st International Conference on Machine Learning</em>&nbsp<strong>(ICML 2024 AI4Science workshop)</strong>&nbsp&nbsp
-                                    <br>
-                                    <font color="gray">Protein ensembles generation; Flow matching; AlphaFold</font>
-                                    <br>
-                                    <a href="https://openreview.net/pdf?id=Z6fPAsu91p" target="_blank">[Paper]</a>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="site_stop()" onmouseover="site_start()">
-                                <td style="padding:45px;width:25%;vertical-align:left">
-                                    <div class="one">
-                                        <div class="two" id='site_image'>
-                                            <img src='images/site.png' height="140" width="200">
-                                        </div>
-                                            <img src='images/site.png' height="140" width="200">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function site_start() {
-                                            document.getElementById('site_image').style.opacity = "1";
-                                        }
-
-                                        function site_stop() {
-                                            document.getElementById('site_image').style.opacity = "0";
-                                        }
-                                        site_stop()
-                                    </script>
-                                </td>
-
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle>Highly accurate carbohydrate-binding site prediction with DeepGlycanSite
-                                    </papertitle>
-                                    <br>
-                                    Xinheng He,&nbsp
-                                    Lifen Zhao,&nbsp
-                                    Yinping Tian,&nbsp
-                                    Rui Li,&nbsp
-                                    Qinyu Chu,&nbsp
-                                    Zhiyong Gu,&nbsp
-                                    Mingyue Zheng,&nbsp
-                                    <strong>Yusong Wang</strong>,&nbsp
-                                    Shaoning Li,&nbsp
-                                    Hualiang Jiang,&nbsp
-                                    Yi Jiang,&nbsp
-                                    Liuqing Wen,&nbsp
-                                    Dingyan Wang,&nbsp
-                                    Xi Cheng,&nbsp
-                                    <br>
-                                    <em>Nature Communications</em>&nbsp<strong>(NC 2024)</strong>&nbsp&nbsp
-                                    <br>
-                                    <font color="gray">Binding sites predictoin; Carbohydrates</font>
-                                    <br>
-                                    <a href="https://www.nature.com/articles/s41467-024-49516-2" target="_blank">[Paper]</a>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="f3low_stop()" onmouseover="f3low_start()">
-                                <td style="padding:45px;width:25%;vertical-align:left">
-                                    <div class="one">
-                                        <div class="two" id='f3low_image'>
-                                            <img src='images/f3low_0.jpg' height="140" width="200">
-                                        </div>
-                                            <img src='images/f3low_1.jpg' height="140" width="200">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function f3low_start() {
-                                            document.getElementById('f3low_image').style.opacity = "1";
-                                        }
-
-                                        function f3low_stop() {
-                                            document.getElementById('f3low_image').style.opacity = "0";
-                                        }
-                                        f3low_stop()
-                                    </script>
-                                </td>
-
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle>F<sup>3</sup>low: Frame-to-Frame Coarse-grained Molecular Dynamics with SE(3) Guided Flow Matching
-                                    </papertitle>
-                                    <br>
-                                    Shaoning Li*,&nbsp
-                                    <strong>Yusong Wang*</strong>,&nbsp
-                                    Mingyu Li*,&nbsp
-                                    Jian Zhang,&nbsp
-                                    Bin Shao,&nbsp
-                                    Nanning Zheng,&nbsp
-                                    Jian Tang&nbsp
-                                    <br>
-                                    <em>12th International Conference on Learning Representations</em>&nbsp<strong>(ICLR 2024 GEM workshop)</strong>&nbsp&nbsp
-                                    <br>
-                                    <font color="gray">Coarse-grained protein dynamics; SE(3) Flow matching</font>
-                                    <br>
-                                    <a href="https://openreview.net/pdf?id=L2MDQ1q3f8" target="_blank">[Paper]</a>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="lsrm_stop()" onmouseover="lsrm_start()">
-                                <td style="padding:45px;width:25%;vertical-align:left">
-                                    <div class="one">
-                                        <div class="two" id='geoformer_image'>
-                                            <img src='images/lsrm.png' height="140" width="200">
-                                        </div>
-                                            <img src='images/lsrm.png' height="140" width="200">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function lsrm_start() {
-                                            document.getElementById('geoformer_image').style.opacity = "1";
-                                        }
-
-                                        function lsrm_stop() {
-                                            document.getElementById('geoformer_image').style.opacity = "0";
-                                        }
-                                        lsrm_stop()
-                                    </script>
-                                </td>
-
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle>Long-Short-Range Message-Passing: A Physics-Informed Framework to Capture Non-Local Interaction for Scalable Molecular Dynamics Simulation
-                                    </papertitle>
-                                    <br>
-                                    Yunyang Li*,&nbsp
-                                    <strong>Yusong Wang*</strong>,&nbsp
-                                    Lin Huang,&nbsp
-                                    Han Yang,&nbsp
-                                    Xinran Wei,&nbsp
-                                    Jia Zhang,&nbsp
-                                    Tong Wang,&nbsp
-                                    Zun Wang,&nbsp
-                                    Bin Shao,&nbsp
-                                    Tie-Yan Liu&nbsp
-                                    <br>
-                                    <em>12th International Conference on Learning Representations</em>&nbsp<strong>(ICLR 2024)</strong>&nbsp&nbsp
-                                    <br>
-                                    <font color="gray">Machine learning force fields; Equivariant graph neural networks; Long-range Interaction</font>
-                                    <br>
-                                    <a href="https://openreview.net/forum?id=rvDQtdMnOl" target="_blank">[Paper]</a>&nbsp&nbsp&nbsp&nbsp
-                                    <a href="https://github.com/liyy2/LSR-MP" target="_blank">[Code]</a>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="geoformer_stop()" onmouseover="geoformer_start()">
-                                <td style="padding:45px;width:25%;vertical-align:left">
-                                    <div class="one">
-                                        <div class="two" id='geoformer_image'>
-                                            <img src='images/geoformer.png' height="140" width="200">
-                                        </div>
-                                            <img src='images/geoformer.png' height="140" width="200">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function geoformer_start() {
-                                            document.getElementById('geoformer_image').style.opacity = "1";
-                                        }
-
-                                        function geoformer_stop() {
-                                            document.getElementById('geoformer_image').style.opacity = "0";
-                                        }
-                                        geoformer_stop()
-                                    </script>
-                                </td>
-
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle>Geometric Transformer with Interatomic Positional Encoding
-                                    </papertitle>
-                                    <br>
-                                    <strong>Yusong Wang*</strong>,&nbsp
-                                    Shaoning Li*,&nbsp
-                                    Tong Wang,&nbsp
-                                    Bin Shao,&nbsp
-                                    Nanning Zheng,&nbsp
-                                    Tie-Yan Liu&nbsp
-                                    <br>
-                                    <em>37th Conference on Neural Information Processing Systems</em>&nbsp<strong>(NeurIPS 2023)</strong>&nbsp&nbsp
-                                    <br>
-                                    <font color="gray">Molecule representation learning; Transformers; Positional encoding</font>
-                                    <br>
-                                    <a href="https://openreview.net/pdf?id=9o6KQrklrE" target="_blank">[Paper]</a>&nbsp&nbsp&nbsp&nbsp
-                                    <a href="https://github.com/microsoft/AI2BMD/tree/Geoformer" target="_blank">[Code]</a>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="visnet_stop()" onmouseover="visnet_start()" bgcolor="#ffffd0">
-                                <td style="padding:45px;width:25%;vertical-align:left">
-                                    <div class="one">
-                                        <div class="two" id='visnet_image'>
-                                            <img src='images/visnet_0.jpg' height="140" width="200">
-                                        </div>
-                                            <img src='images/visnet_1.jpg' height="140" width="200">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function visnet_start() {
-                                            document.getElementById('visnet_image').style.opacity = "1";
-                                        }
-
-                                        function visnet_stop() {
-                                            document.getElementById('visnet_image').style.opacity = "0";
-                                        }
-                                        visnet_stop()
-                                    </script>
-                                </td>
-
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle>Enhancing geometric representations for molecules with equivariant vector-scalar interactive message passing
-                                    </papertitle>
-                                    <br>
-                                    <strong>Yusong Wang*</strong>,&nbsp
-                                    Tong Wang*,&nbsp
-                                    Shaoning Li*,&nbsp
-                                    Xinheng He,&nbsp
-                                    Mingyu Li,&nbsp
-                                    Zun Wang,&nbsp
-                                    Nanning Zheng,&nbsp
-                                    Bin Shao,&nbsp
-                                    Tie-Yan Liu&nbsp
-                                    <br>
-                                    <em>Nature Communications</em>&nbsp<strong>(NC 2024)</strong>&nbsp&nbsp
-                                    <br>
-                                    <font color="gray">Molecular dynamics; Machine learning force fields; Equivariant graph neural networks</font>
-                                    <br>
-                                    <font color="red"><strong>Editor's Highlights in AI and Bio</strong></font>
-                                    <br>
-                                    <a href="https://www.nature.com/articles/s41467-023-43720-2" target="_blank">[Paper]</a>&nbsp&nbsp&nbsp&nbsp
-                                    <a href="https://github.com/microsoft/AI2BMD/tree/ViSNet" target="_blank">[Code]</a>&nbsp&nbsp&nbsp&nbsp
-                                    <a href="https://www.microsoft.com/en-us/research/blog/visnet-a-general-molecular-geometry-modeling-framework-for-predicting-molecular-properties-and-simulating-molecular-dynamics/" target="_blank">[Blog]</a>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="igt_stop()" onmouseover="igt_start()">
-                                <td style="padding:45px;width:25%;vertical-align:left">
-                                    <div class="one">
-                                        <div class="two" id='igt_image'>
-                                            <img src='images/igt.png' height="140" width="200">
-                                        </div>
-                                            <img src='images/igt.png' height="140" width="200">
-                                    </div>
-                                    <script type="text/javascript">
-                                        function igt_start() {
-                                            document.getElementById('igt_image').style.opacity = "1";
-                                        }
-
-                                        function igt_stop() {
-                                            document.getElementById('igt_image').style.opacity = "0";
-                                        }
-                                        igt_stop()
-                                    </script>
-                                </td>
-
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle>Improved drug-target interaction prediction with intermolecular graph transformer
-                                    </papertitle>
-                                    <br>
-                                    Siyuan Liu*,&nbsp
-                                    <strong>Yusong Wang*</strong>,&nbsp
-                                    Yifan Deng,&nbsp
-                                    Liang He,&nbsp
-                                    Bin Shao,&nbsp
-                                    Jian Yin,&nbsp
-                                    Nanning Zheng,&nbsp
-                                    Tie-Yan Liu,&nbsp
-                                    Tong Wang&nbsp
-                                    <br>
-                                    <em>Briefings in Bioinformatics</em>&nbsp<strong>(Brief. Bioinformatics 2022)</strong>&nbsp&nbsp
-                                    <br>
-                                    <font color="gray">Protein-ligand docking; Graph Transformer</font>
-                                    <br>
-                                    <a href="https://academic.oup.com/bib/article/23/5/bbac162/6581433" target="_blank">[Paper]</a>&nbsp&nbsp&nbsp&nbsp
-                                    <a href="https://github.com/microsoft/Drug-Interaction-Research/tree/IGT-for-Structure-Based-DTI-Prediction" target="_blank">[Code]</a>
-                                </td>
-                            </tr>
-
-                        <table
-                            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                            <tbody>
-                                <tr>
-                                    <td style="padding:20px;width:100%;vertical-align:middle;">
-                                        <heading>Competitions</heading>
-                                        <p>
-                                            <strong>[Aug. 2023]</strong>&nbsp&nbsp
-                                            <a href="https://aistudio.baidu.com/competition/detail/1012/0/leaderboard" target="_blank">First Global AI Drug Development Competition</a>
-                                            &nbsp-&nbsp1st Prize
-                                        </p>   
-                                        <p>
-                                            <strong>[Nov. 2022]</strong>&nbsp&nbsp
-                                            <a href="https://ogb.stanford.edu/neurips2022/results/" target="_blank">OGB-LSC Graph Regression Track @ NeurIPS 2022</a>
-                                            &nbsp-&nbsp2nd Place
-                                        </p>
-                                        <p>
-                                            <strong>[Nov. 2022]</strong>&nbsp&nbsp
-                                            <a href="https://opencatalystproject.org/challenge.html" target="_blank">Open Catalyst Project @ NeurIPS 2022</a>
-                                            &nbsp-&nbsp3rd Place
-                                        </p>
-                                        <p>
-                                            <strong>[Sep. 2019]</strong>&nbsp&nbsp
-                                            <a href="https://ikcest.org/bigdata2021/zxdt/content/210450484964329046.html" target="_blank">The 1st IKCEST "the Belt and Road" International Big Data Competition</a>
-                                            &nbsp-&nbspInternational Excellence Prize 
-                                        </p>      
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <table
-                            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                            <tbody>
-                                <tr>
-                                    <td style="padding:20px;width:100%;vertical-align:middle">
-                                        <heading>Collaboration</heading>
-                                        <p>
-                                            I have close collaboration with Dr. <a href="https://www.shaoningli.com/" target="_blank">Shaoning Li</a>, Dr. <a href="https://scholar.google.com/citations?user=tvuzh4YAAAAJ" target="_blank">Mingyu Li</a>, Dr. <a href="https://scholar.google.com/citations?user=XId0gxMAAAAJ" target="_blank">Xinheng He</a>, and Dr. <a href="https://ccr-cheng.github.io/" target="_blank">Chaoran Cheng</a>.
-                                        </p>   
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:0px">
-                                    <p font-size:small;>
-                                        <br>
-                                        <br>
-                                        <div style="float:left;">
-                                        Updated at Sep. 2024
-                                        </div>
-                                        <div style="float:right;">
-                                            Template from <a href="https://jonbarron.info">Jon Barron</a>
-                                        </div>
-                                        <br>
-                                        <br>        
-                                    </p>                           
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-    </table>
+  <script src="js/main.js"></script>
 </body>
-
 </html>

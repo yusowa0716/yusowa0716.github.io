@@ -1,0 +1,135 @@
+[
+  {
+    "id": "np3m",
+    "title": "Neural P<sup>3</sup>M: A Long-Range Interaction Modeling Enhancer for Geometric GNNs",
+    "authors": "**Yusong Wang***, Chaoran Cheng*, Shaoning Li*, Yuxuan Ren, Bin Shao, Ge Liu, Pheng-Ann Heng, Nanning Zheng",
+    "venue": "38th Conference on Neural Information Processing Systems",
+    "venueShort": "NeurIPS 2024",
+    "year": 2024,
+    "tags": ["Molecule representation learning", "Long-range interaction modeling", "Geometric GNNs"],
+    "highlight": true,
+    "award": null,
+    "image": "images/np3m.png",
+    "imageHover": null,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/pdf/2409.17622v1" }
+    ]
+  },
+  {
+    "id": "alphaflow",
+    "title": "Improving AlphaFlow for Efficient Protein Ensembles Generation",
+    "authors": "Shaoning Li*, Mingyu Li*, **Yusong Wang**, Xinheng He, Nanning Zheng, Jian Zhang, Pheng-Ann Heng",
+    "venue": "41st International Conference on Machine Learning",
+    "venueShort": "ICML 2024 AI4Science workshop",
+    "year": 2024,
+    "tags": ["Protein ensembles generation", "Flow matching", "AlphaFold"],
+    "highlight": false,
+    "award": null,
+    "image": "images/openflow_1.png",
+    "imageHover": "images/openflow_0.png",
+    "links": [
+      { "label": "Paper", "url": "https://openreview.net/pdf?id=Z6fPAsu91p" }
+    ]
+  },
+  {
+    "id": "deepglycansite",
+    "title": "Highly accurate carbohydrate-binding site prediction with DeepGlycanSite",
+    "authors": "Xinheng He, Lifen Zhao, Yinping Tian, Rui Li, Qinyu Chu, Zhiyong Gu, Mingyue Zheng, **Yusong Wang**, Shaoning Li, Hualiang Jiang, Yi Jiang, Liuqing Wen, Dingyan Wang, Xi Cheng",
+    "venue": "Nature Communications",
+    "venueShort": "NC 2024",
+    "year": 2024,
+    "tags": ["Binding sites prediction", "Carbohydrates"],
+    "highlight": false,
+    "award": null,
+    "image": "images/site.png",
+    "imageHover": null,
+    "links": [
+      { "label": "Paper", "url": "https://www.nature.com/articles/s41467-024-49516-2" }
+    ]
+  },
+  {
+    "id": "f3low",
+    "title": "F<sup>3</sup>low: Frame-to-Frame Coarse-grained Molecular Dynamics with SE(3) Guided Flow Matching",
+    "authors": "Shaoning Li*, **Yusong Wang***, Mingyu Li*, Jian Zhang, Bin Shao, Nanning Zheng, Jian Tang",
+    "venue": "12th International Conference on Learning Representations",
+    "venueShort": "ICLR 2024 GEM workshop",
+    "year": 2024,
+    "tags": ["Coarse-grained protein dynamics", "SE(3) Flow matching"],
+    "highlight": false,
+    "award": null,
+    "image": "images/f3low_1.jpg",
+    "imageHover": "images/f3low_0.jpg",
+    "links": [
+      { "label": "Paper", "url": "https://openreview.net/pdf?id=L2MDQ1q3f8" }
+    ]
+  },
+  {
+    "id": "lsrm",
+    "title": "Long-Short-Range Message-Passing: A Physics-Informed Framework to Capture Non-Local Interaction for Scalable Molecular Dynamics Simulation",
+    "authors": "Yunyang Li*, **Yusong Wang***, Lin Huang, Han Yang, Xinran Wei, Jia Zhang, Tong Wang, Zun Wang, Bin Shao, Tie-Yan Liu",
+    "venue": "12th International Conference on Learning Representations",
+    "venueShort": "ICLR 2024",
+    "year": 2024,
+    "tags": ["Machine learning force fields", "Equivariant graph neural networks", "Long-range Interaction"],
+    "highlight": false,
+    "award": null,
+    "image": "images/lsrm.png",
+    "imageHover": null,
+    "links": [
+      { "label": "Paper", "url": "https://openreview.net/forum?id=rvDQtdMnOl" },
+      { "label": "Code", "url": "https://github.com/liyy2/LSR-MP" }
+    ]
+  },
+  {
+    "id": "geoformer",
+    "title": "Geometric Transformer with Interatomic Positional Encoding",
+    "authors": "**Yusong Wang***, Shaoning Li*, Tong Wang, Bin Shao, Nanning Zheng, Tie-Yan Liu",
+    "venue": "37th Conference on Neural Information Processing Systems",
+    "venueShort": "NeurIPS 2023",
+    "year": 2023,
+    "tags": ["Molecule representation learning", "Transformers", "Positional encoding"],
+    "highlight": false,
+    "award": null,
+    "image": "images/geoformer.png",
+    "imageHover": null,
+    "links": [
+      { "label": "Paper", "url": "https://openreview.net/pdf?id=9o6KQrklrE" },
+      { "label": "Code", "url": "https://github.com/microsoft/AI2BMD/tree/Geoformer" }
+    ]
+  },
+  {
+    "id": "visnet",
+    "title": "Enhancing geometric representations for molecules with equivariant vector-scalar interactive message passing",
+    "authors": "**Yusong Wang***, Tong Wang*, Shaoning Li*, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Bin Shao, Tie-Yan Liu",
+    "venue": "Nature Communications",
+    "venueShort": "NC 2024",
+    "year": 2024,
+    "tags": ["Molecular dynamics", "Machine learning force fields", "Equivariant graph neural networks"],
+    "highlight": true,
+    "award": "Editor's Highlights in AI and Bio",
+    "image": "images/visnet_1.jpg",
+    "imageHover": "images/visnet_0.jpg",
+    "links": [
+      { "label": "Paper", "url": "https://www.nature.com/articles/s41467-023-43720-2" },
+      { "label": "Code", "url": "https://github.com/microsoft/AI2BMD/tree/ViSNet" },
+      { "label": "Blog", "url": "https://www.microsoft.com/en-us/research/blog/visnet-a-general-molecular-geometry-modeling-framework-for-predicting-molecular-properties-and-simulating-molecular-dynamics/" }
+    ]
+  },
+  {
+    "id": "igt",
+    "title": "Improved drug-target interaction prediction with intermolecular graph transformer",
+    "authors": "Siyuan Liu*, **Yusong Wang***, Yifan Deng, Liang He, Bin Shao, Jian Yin, Nanning Zheng, Tie-Yan Liu, Tong Wang",
+    "venue": "Briefings in Bioinformatics",
+    "venueShort": "Brief. Bioinformatics 2022",
+    "year": 2022,
+    "tags": ["Protein-ligand docking", "Graph Transformer"],
+    "highlight": false,
+    "award": null,
+    "image": "images/igt.png",
+    "imageHover": null,
+    "links": [
+      { "label": "Paper", "url": "https://academic.oup.com/bib/article/23/5/bbac162/6581433" },
+      { "label": "Code", "url": "https://github.com/microsoft/Drug-Interaction-Research/tree/IGT-for-Structure-Based-DTI-Prediction" }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "name": "Yusong Wang",
+  "title": "Ph.D. Candidate",
+  "photoUrl": "images/yusong.jpg",
+  "email": "yusowa0716 [at] gmail [dot] com",
+  "cvUrl": "data/CV_Yusong_Wang.pdf",
+  "socialLinks": [
+    { "label": "GitHub", "url": "https://github.com/yusowa0716", "icon": "github" },
+    { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=sCBrMcIAAAAJ", "icon": "scholar" }
+  ],
+  "bio": "I received my B.S. in the <a href=\"https://en.wikipedia.org/wiki/Special_Class_for_the_Gifted_Young\" target=\"_blank\">Special Class for the Gifted Young (SCGY)</a> program at <a href=\"http://en.xjtu.edu.cn/\" target=\"_blank\">Xi'an Jiaotong University</a>, majoring in Automation. Currently, I am a third-year Ph.D. candidate jointly trained at <a href=\"https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/\" target=\"_blank\">Microsoft Research Asia</a> and <a href=\"http://www.aiar.xjtu.edu.cn/\" target=\"_blank\">Institute of Artificial Intelligence and Robotics</a> in Xi'an Jiaotong University, under the supervision of Dr. <a href=\"https://www.binshao.info/\" target=\"_blank\">Bin Shao</a> and Academician of Chinese Academy of Engineering, Dr. <a href=\"https://ieeexplore.ieee.org/author/37271536700\" target=\"_blank\">Nanning Zheng</a>.",
+  "bioSecondary": "I served as a research intern at <a href=\"https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/\" target=\"_blank\">Microsoft Research AI4Science</a> supervised by Dr. <a href=\"https://www.binshao.info/\" target=\"_blank\">Bin Shao</a> from July 2020.",
+  "researchInterests": {
+    "summary": "I'm primarily interested in AI4Science, particularly in machine learning force fields. Recently, I've developed a strong interest in Generative AI as well. I'm dedicated to using generative models to explore new solutions in science, including potential energy surface sampling, protein-ligand docking, etc.",
+    "highlightNote": "Representative papers are <span class=\"highlight\">highlighted</span>."
+  },
+  "collaborators": [
+    { "name": "Dr. Shaoning Li", "url": "https://www.shaoningli.com/" },
+    { "name": "Dr. Mingyu Li", "url": "https://scholar.google.com/citations?user=tvuzh4YAAAAJ" },
+    { "name": "Dr. Xinheng He", "url": "https://scholar.google.com/citations?user=XId0gxMAAAAJ" },
+    { "name": "Dr. Chaoran Cheng", "url": "https://ccr-cheng.github.io/" }
+  ]
+}
